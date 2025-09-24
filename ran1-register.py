@@ -8,7 +8,7 @@ VALID_AIC_ID = "01"  # Only this AIC ID is considered valid
 def start_register():
     context = zmq.Context()
     socket = context.socket(zmq.REP)
-    socket.bind("tcp://127.0.0.1:6000")  # Register listens on port 6000
+    socket.bind("tcp://192.168.0.178:6000")  # Register listens on port 6000
 
     print("[Register] RAN1 Register started... Waiting for AIC registration requests.")
 
