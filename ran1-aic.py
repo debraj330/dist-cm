@@ -9,7 +9,7 @@ AIC_ID = "01"  # The ID of this AI Controller
 def register_with_ran():
     context = zmq.Context()
     socket = context.socket(zmq.REQ)
-    socket.connect("tcp://127.0.0.1:6000")  # Connect to Register on port 6000
+    socket.connect("tcp://192.168.0.178:6000")  # Connect to Register on port 6000
 
     print(f"[AIC-{AIC_ID}] Attempting to register with Register...")
 
